@@ -66,7 +66,7 @@ export default function Page() {
           <div className="mt-6 sm:mt-8">
             <div className="group relative overflow-hidden rounded-2xl border border-amber-200/50 bg-white/70 shadow-lg backdrop-blur-sm transition-transform duration-300 active:scale-[0.98]">
               <Image
-                src="/placeholder-1lz5m.png"
+                src="/shin.png"
                 alt="Shinchan and Himawari smiling in a festive Rakshabandhan scene"
                 width={864}
                 height={480}
