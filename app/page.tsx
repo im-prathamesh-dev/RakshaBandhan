@@ -39,7 +39,7 @@ export default function Page() {
       <FloatingRakhis />
       <Petals />
 
-      {/* Floating audio control (optional) */}
+      {/* Floating audio control */}
       <div className="fixed bottom-4 right-4 z-50">
         <AudioControl />
       </div>
@@ -92,7 +92,7 @@ export default function Page() {
         {/* Letter Section */}
         <SectionReveal as="section" className="mb-12 sm:mb-16">
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-            {/* Illustration (shows above letter on mobile) */}
+            {/* Illustration */}
             <div className="order-1 lg:order-none">
               <div className="group relative overflow-hidden rounded-2xl border border-rose-200/50 bg-white/70 shadow-md transition-transform duration-300 hover:scale-[1.01] active:scale-[0.98]">
                 <Image
@@ -161,11 +161,25 @@ export default function Page() {
             {"Love You Didi ❤️"}
           </p>
         </SectionReveal>
+
+        {/* Footer */}
+        <footer className="relative z-10 mt-10 pb-6 text-center">
+          <p className="text-sm text-stone-600">
+            Made with ❤️ by <span className="font-semibold text-rose-700">Prathamesh</span>
+          </p>
+          <a
+            href="https://instagram.com/prathamesh_d_1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-1 inline-block text-sm text-pink-600 hover:text-pink-800 transition-colors"
+          >
+            @prathamesh_d_1
+          </a>
+        </footer>
       </div>
 
       {/* Lightweight animation styles */}
       <style jsx global>{`
-        /* Sparkle twinkle */
         @keyframes sparkle {
           0% { transform: scale(0.8) rotate(0deg); opacity: 0; }
           25% { opacity: 1; }
@@ -173,27 +187,19 @@ export default function Page() {
           75% { opacity: 1; }
           100% { transform: scale(0.8) rotate(120deg); opacity: 0; }
         }
-
-        /* Gentle float up & down */
         @keyframes float {
           0% { transform: translateY(0px); }
           50% { transform: translateY(-10px); }
           100% { transform: translateY(0px); }
         }
-
-        /* Petal drift downward with sway */
         @keyframes drift {
           0% { transform: translateY(-10vh) translateX(0) rotate(0deg); opacity: 0; }
           10% { opacity: 0.8; }
           50% { transform: translateY(40vh) translateX(-10px) rotate(30deg); }
           100% { transform: translateY(90vh) translateX(10px) rotate(60deg); opacity: 0; }
         }
-
-        /* Reveal on scroll */
         .reveal-hidden { opacity: 0; transform: translateY(12px); }
         .reveal-show { opacity: 1; transform: translateY(0); transition: opacity 600ms ease, transform 600ms ease; }
-
-        /* Touch-friendly tap highlight removal */
         * { -webkit-tap-highlight-color: rgba(0,0,0,0); }
       `}</style>
     </main>
