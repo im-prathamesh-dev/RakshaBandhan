@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image"
 import { Heart } from 'lucide-react'
 import { cn } from "@/lib/utils"
