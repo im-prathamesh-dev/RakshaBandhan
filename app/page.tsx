@@ -125,7 +125,7 @@ export default function Page() {
                 <br />
                 {"Love you always ❤️"}
                 <br />
-                {"– Your Brother"}
+                {"– Prathamesh"}
               </p>
             </article>
           </div>
